@@ -1,0 +1,127 @@
+/**
+ * @name midnight (spooky)
+ * @description a dark, spooky halloween-themed discord theme.
+ * @author refact0r (edited by Sigma boi)
+ * @version 2.1.1
+*/
+
+/* import theme modules */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
+
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
+
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --border-hover-transition: 0.2s ease;
+
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --top-bar-title-position: off;
+    --subtle-top-bar-title: off;
+
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: color;
+    --dms-background-color: linear-gradient(70deg, var(--orange-2), var(--purple-2), var(--green-3));
+
+    --background-image: on;
+    --background-image-url: url('');
+    --transparency-tweaks: on;
+    --remove-bg-layer: off;
+    --panel-blur: on;
+    --blur-amount: 12px;
+    --bg-floating: hsla(30, 25%, 8%, 0.9);
+
+    --custom-chatbar: separated;
+    --chatbar-height: 56px;
+    --chatbar-padding: 8px;
+
+    --small-user-panel: on;
+}
+
+/* spooky halloween color palette */
+:root {
+    --colors: on;
+
+    /* text colors */
+    --text-0: hsla(20, 15%, 10%, 1);
+    --text-1: hsl(30, 40%, 95%);
+    --text-2: hsl(25, 30%, 85%);
+    --text-3: hsl(25, 20%, 70%);
+    --text-4: hsl(25, 15%, 50%);
+    --text-5: hsl(25, 10%, 35%);
+
+    /* background and dark tones */
+    --bg-1: hsla(25, 25%, 20%, 0.6);
+    --bg-2: hsla(25, 25%, 15%, 0.6);
+    --bg-3: hsla(25, 25%, 10%, 0.6);
+    --bg-4: hsla(25, 20%, 7%, 0.6);
+    --hover: hsla(30, 60%, 50%, 0.08);
+    --active: hsla(30, 60%, 50%, 0.15);
+    --active-2: hsla(30, 60%, 50%, 0.25);
+    --message-hover: hsla(25, 0%, 0%, 0.1);
+
+    /* accent colors (replaced blues with eerie oranges/purples/greens) */
+    --accent-1: var(--orange-1);
+    --accent-2: var(--orange-2);
+    --accent-3: var(--orange-3);
+    --accent-4: var(--orange-4);
+    --accent-5: var(--orange-5);
+    --accent-new: var(--purple-3);
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--orange-2), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--orange-2), transparent 95%) 40%, transparent);
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--purple-3), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--purple-3), transparent 95%) 40%, transparent);
+
+    /* spooky status colors */
+    --online: var(--green-2);
+    --dnd: var(--red-3);
+    --idle: var(--orange-3);
+    --streaming: var(--purple-2);
+    --offline: var(--text-4);
+
+    /* borders */
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: var(--active);
+    --button-border: hsl(25, 0%, 100%, 0.1);
+
+    /* spooky base tones */
+    --orange-1: oklch(80% 0.12 50);
+    --orange-2: oklch(75% 0.12 50);
+    --orange-3: oklch(70% 0.12 50);
+    --orange-4: oklch(65% 0.12 50);
+    --orange-5: oklch(60% 0.12 50);
+
+    --purple-1: oklch(75% 0.11 310);
+    --purple-2: oklch(70% 0.11 310);
+    --purple-3: oklch(65% 0.11 310);
+    --purple-4: oklch(60% 0.11 310);
+    --purple-5: oklch(55% 0.11 310);
+
+    --green-1: oklch(70% 0.1 150);
+    --green-2: oklch(65% 0.1 150);
+    --green-3: oklch(60% 0.1 150);
+    --green-4: oklch(55% 0.1 150);
+    --green-5: oklch(50% 0.1 150);
+
+    --red-1: oklch(75% 0.12 30);
+    --red-2: oklch(70% 0.12 30);
+    --red-3: oklch(65% 0.12 30);
+    --red-4: oklch(60% 0.12 30);
+    --red-5: oklch(55% 0.12 30);
+}

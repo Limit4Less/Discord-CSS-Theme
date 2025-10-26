@@ -1,0 +1,111 @@
+/**
+ * @name nord-pastel-blue-twilight
+ * @description A dark-but-soft Discord theme with pastel Nord blues — balanced for night use without being pitch black.
+ * @author Sigma
+ * @version 1.0.0
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
+
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
+
+    --animations: on;
+    --list-item-transition: 0.25s ease;
+    --border-hover-transition: 0.2s ease;
+
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_snowflake.svg');
+    --dms-icon-svg-size: 85%;
+    --custom-dms-background: color;
+    --dms-background-color: linear-gradient(70deg, var(--pastel-8), var(--pastel-9), var(--pastel-10));
+
+    --background-image: off;
+    --transparency-tweaks: on;
+    --panel-blur: on;
+    --blur-amount: 14px;
+    --bg-floating: hsla(215, 30%, 20%, 0.85); /* darker background */
+
+    --custom-chatbar: separated;
+    --chatbar-height: 56px;
+    --small-user-panel: on;
+}
+
+/* === TWILIGHT PASTEL NORD THEME === */
+:root {
+    --colors: on;
+
+    /* === TEXT === */
+    --text-0: hsl(215, 20%, 88%);
+    --text-1: hsl(215, 18%, 80%);
+    --text-2: hsl(215, 15%, 70%);
+    --text-3: hsl(215, 12%, 60%);
+    --text-4: hsl(215, 10%, 50%);
+    --text-5: hsl(215, 8%, 40%);
+
+    /* === BACKGROUND === */
+    --bg-1: hsla(215, 25%, 20%, 0.9);
+    --bg-2: hsla(215, 25%, 18%, 0.9);
+    --bg-3: hsla(215, 25%, 16%, 0.9);
+    --bg-4: hsla(215, 25%, 14%, 0.9);
+    --hover: hsla(200, 35%, 60%, 0.12);
+    --active: hsla(200, 35%, 60%, 0.2);
+    --active-2: hsla(200, 35%, 60%, 0.3);
+    --message-hover: hsla(215, 20%, 35%, 0.08);
+
+    /* === ACCENTS (PASTEL NORD RANGE) === */
+    --accent-1: var(--pastel-7);
+    --accent-2: var(--pastel-8);
+    --accent-3: var(--pastel-9);
+    --accent-4: var(--pastel-10);
+    --accent-5: var(--pastel-8);
+    --accent-new: var(--pastel-9);
+
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--pastel-8), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--pastel-8), transparent 95%) 40%, transparent);
+
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--pastel-9), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--pastel-9), transparent 95%) 40%, transparent);
+
+    /* === STATUS COLORS === */
+    --online: var(--pastel-8);
+    --dnd: var(--pastel-11);
+    --idle: var(--pastel-13);
+    --streaming: var(--pastel-9);
+    --offline: var(--text-4);
+
+    /* === BORDERS === */
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: var(--active);
+    --button-border: hsla(215, 10%, 100%, 0.1);
+
+    /* === PASTEL NORD BLUE PALETTE === */
+    --pastel-0: hsl(215, 30%, 20%);
+    --pastel-1: hsl(216, 28%, 18%);
+    --pastel-2: hsl(217, 25%, 16%);
+    --pastel-3: hsl(218, 22%, 14%);
+    --pastel-4: hsl(219, 20%, 12%);
+    --pastel-5: hsl(210, 25%, 15%);
+    --pastel-6: hsl(208, 28%, 18%);
+    --pastel-7: hsl(205, 35%, 25%);
+    --pastel-8: hsl(203, 40%, 35%);
+    --pastel-9: hsl(200, 45%, 45%);
+    --pastel-10: hsl(198, 50%, 55%);
+
+    --pastel-11: hsl(10, 65%, 70%);
+    --pastel-12: hsl(42, 55%, 70%);
+    --pastel-13: hsl(100, 40%, 70%);
+    --pastel-14: hsl(265, 35%, 70%);
+}

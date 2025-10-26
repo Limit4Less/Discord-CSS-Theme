@@ -1,0 +1,118 @@
+/**
+ * @name nord-orange-pastel
+ * @description A cozy, modern Discord theme blending Nord’s cool neutrals with warm pastel orange accents.
+ * @author Sigma
+ * @version 1.0.0
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+body {
+    --font: 'figtree';
+    --code-font: '';
+    font-weight: 400;
+
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
+
+    --animations: on;
+    --list-item-transition: 0.25s ease;
+    --border-hover-transition: 0.2s ease;
+
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: titlebar;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_snowflake.svg');
+    --dms-icon-svg-size: 85%;
+    --custom-dms-background: color;
+    --dms-background-color: linear-gradient(70deg, var(--orange-3), var(--nord-6), var(--orange-4));
+
+    --background-image: off;
+    --transparency-tweaks: on;
+    --panel-blur: on;
+    --blur-amount: 14px;
+    --bg-floating: hsla(220, 15%, 12%, 0.85);
+
+    --custom-chatbar: separated;
+    --chatbar-height: 56px;
+    --small-user-panel: on;
+}
+
+/* === NORD + ORANGE PASTEL PALETTE === */
+:root {
+    --colors: on;
+
+    /* === TEXT === */
+    --text-0: hsl(222, 15%, 15%);
+    --text-1: hsl(219, 30%, 92%);
+    --text-2: hsl(218, 20%, 85%);
+    --text-3: hsl(217, 15%, 70%);
+    --text-4: hsl(215, 10%, 55%);
+    --text-5: hsl(215, 10%, 40%);
+
+    /* === BACKGROUND === */
+    --bg-1: hsla(220, 15%, 25%, 0.6);
+    --bg-2: hsla(220, 15%, 18%, 0.6);
+    --bg-3: hsla(220, 15%, 14%, 0.6);
+    --bg-4: hsla(220, 15%, 10%, 0.6);
+    --hover: hsla(18, 90%, 60%, 0.12);
+    --active: hsla(18, 90%, 60%, 0.2);
+    --active-2: hsla(18, 90%, 60%, 0.3);
+    --message-hover: hsla(220, 0%, 0%, 0.08);
+
+    /* === ACCENTS === */
+    --accent-1: var(--orange-1);
+    --accent-2: var(--orange-2);
+    --accent-3: var(--orange-3);
+    --accent-4: var(--orange-4);
+    --accent-5: var(--orange-5);
+    --accent-new: var(--orange-3);
+
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--orange-3), transparent 90%) 40%, transparent);
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--orange-3), transparent 95%) 40%, transparent);
+
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--nord-9), transparent 90%) 40%, transparent);
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--nord-9), transparent 95%) 40%, transparent);
+
+    /* === STATUS COLORS === */
+    --online: var(--nord-8);
+    --dnd: var(--orange-4);
+    --idle: var(--orange-3);
+    --streaming: var(--nord-9);
+    --offline: var(--text-4);
+
+    /* === BORDERS === */
+    --border-light: var(--hover);
+    --border: var(--active);
+    --border-hover: var(--active);
+    --button-border: hsla(220, 10%, 100%, 0.1);
+
+    /* === NORD BASE COLORS === */
+    --nord-0: hsl(220, 16%, 12%);  /* Polar Night */
+    --nord-1: hsl(219, 24%, 18%);
+    --nord-2: hsl(218, 20%, 24%);
+    --nord-3: hsl(217, 15%, 29%);
+    --nord-4: hsl(215, 20%, 65%);
+    --nord-5: hsl(216, 27%, 78%);
+    --nord-6: hsl(218, 32%, 92%);
+    --nord-7: hsl(179, 25%, 65%);
+    --nord-8: hsl(193, 33%, 65%);
+    --nord-9: hsl(210, 35%, 68%);
+    --nord-10: hsl(213, 32%, 75%);
+    --nord-11: hsl(11, 59%, 67%);
+    --nord-12: hsl(355, 55%, 62%);
+    --nord-13: hsl(40, 57%, 74%);
+    --nord-14: hsl(82, 30%, 70%);
+    --nord-15: hsl(311, 25%, 73%);
+
+    /* === ORANGE PASTEL ACCENT === */
+    --orange-1: oklch(85% 0.08 45);
+    --orange-2: oklch(78% 0.09 45);
+    --orange-3: oklch(72% 0.10 45);
+    --orange-4: oklch(67% 0.11 45);
+    --orange-5: oklch(60% 0.12 45);
+}
